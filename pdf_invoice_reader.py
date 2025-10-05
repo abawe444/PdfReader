@@ -46,7 +46,7 @@ class PDFInvoiceReader:
         
         # Extract invoice number (common patterns)
         invoice_patterns = [
-            r'Invoice\s*#?\s*:?\s*([A-Z0-9\-]+)',
+            r'Invoice\s*#\s*:?\s*([A-Z0-9\-]+)',
             r'Invoice\s+Number\s*:?\s*([A-Z0-9\-]+)',
             r'رقم\s+الفاتورة\s*:?\s*([A-Z0-9\-]+)',
             r'INV[:\-\s]*([A-Z0-9\-]+)',
